@@ -24,9 +24,7 @@ btnCloseModal.addEventListener('click', hideModalForm)
 overlay.addEventListener('click', hideModalForm)
 
 document.addEventListener('keydown', (e) => {
-    if(e.key === "Escape") {
-        if(!modalForm.classList.contains('hidden')) {
-            hideModalForm();
-        }   
+    if(e.key === "Escape" && !modalForm.classList.contains('hidden')) {
+            hideModalForm();  
     }
 })
